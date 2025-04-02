@@ -1,32 +1,23 @@
-# Virtual environment
-venv/
-env/
+# Ignore PostgreSQL data directory (if applicable)
+pgdata/
+*.pgsql
 
-# Byte-compiled Python files
+# Ignore database dumps (if you export them)
+*.sql
+*.dump
+
+# Ignore environment files (Django settings, secrets, etc.)
+.env
+*.env
+
+# Ignore compiled files and cache
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
 
-# Database files
-db.sqlite3
-
-# Django secret keys
-.env
-
-# Logs and temp files
-*.log
-*.pot
-*.py[co]
-
-# Static and media files (if generated dynamically)
-staticfiles/
+# Ignore user-uploaded content
 media/
 
-# VS Code settings (optional)
-.vscode/
-
-# Migrations (optional, but useful in some cases)
-*/migrations/*.pyc
-*/migrations/*.py
-!*/migrations/__init__.py
+# Ignore logs and temporary files
+*.log
+tmp/
